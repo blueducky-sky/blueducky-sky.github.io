@@ -1,0 +1,11 @@
+<!doctype html>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Tesla to Tmap</title>
+<p>앱으로 돌아가는 중입니다...</p>
+<p><a id="back" href="teslatmap://auth/callback">자동으로 열리지 않으면 여기를 누르세요</a></p>
+<script>
+  var target = "teslatmap://auth/callback" + location.search;
+  document.getElementById("back").href = target;
+  location.replace(target);
+</script>
